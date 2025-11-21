@@ -1,11 +1,39 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
+import trilgLogo from "../assets/icon.png";
+import appStoreBadge from "../assets/badges/appstore_de.svg";
+import playStoreBadge from "../assets/badges/playstore_de.svg";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <img src={trilgLogo.src} alt="trilg Logo" class="w-full rounded-4xl" />
+  <section class="space-y-7">
+    <h2 class="text-3xl">mit trilg</h2>
+    <p class="leading-7">
+      können sie jetzt ganz einfach ihr persönliches Buchstabenbild von Tobias
+      Rehberger erstellen.
+    </p>
+  </section>
+  <section class="space-y-7">
+    <h2 class="text-3xl">trilg herunterladen</h2>
+
+    <div class="flex gap-6">
+      <img
+        src={appStoreBadge.src}
+        alt="Jetzt im App Store laden"
+        class="h-12 w-auto opacity-30"
+      />
+
+      <img
+        src={playStoreBadge.src}
+        alt="Jetzt in Google Play laden"
+        class="h-12 w-auto opacity-30"
+      />
+    </div>
+    <div>Demnächst zum Herunterladen verfügbar.</div>
+  </section>
 </Layout>
