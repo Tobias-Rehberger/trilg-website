@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import "@fontsource-variable/google-sans-code";
+
+@theme {
+  --font-heading: "Google Sans Code Variable", sans-serif;
+}
+
+html,
+body {
+  @apply bg-neutral-900 text-neutral-400 font-heading;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading text-neutral-100;
+}
