@@ -8,6 +8,7 @@
 html,
 body {
   @apply bg-neutral-900 text-neutral-400 font-heading;
+  @apply wrap-break-word;
 }
 
 h1,
