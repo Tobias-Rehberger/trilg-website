@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "@fontsource-variable/google-sans-code";
 
+@source ".";
+
 @theme {
   --font-heading: "Google Sans Code Variable", sans-serif;
 }
